@@ -5,8 +5,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navArgs
 import com.ozancanguz.newsapp.R
 import com.ozancanguz.newsapp.databinding.FragmentNewsDetailsBinding
+import com.ozancanguz.newsapp.ui.fragments.news.NewsFragmentDirections
+import com.ozancanguz.newsapp.utils.Util.Companion.loadImage
 
 
 class NewsDetailsFragment : Fragment() {
@@ -14,6 +19,7 @@ class NewsDetailsFragment : Fragment() {
        private var _binding: FragmentNewsDetailsBinding? = null
 
     private val binding get() = _binding!!
+    private val args:NewsDetailsFragmentArgs by navArgs()
 
 
 
@@ -28,7 +34,27 @@ class NewsDetailsFragment : Fragment() {
         val view = binding.root
 
 
+        // update ui
+        getDetails()
+
+        // send web url
+        sendWebUrl()
+
         return view
+    }
+
+    private fun sendWebUrl() {
+        binding.gotonewsbtn.setOnClickListener {
+            val url=NewsDetailsFragmentDirections.actionNewsDetailsFragmentToNewsWebView(args.currentgn)
+          findNavController().navigate(url)
+        }
+    }
+
+    private fun getDetails() {
+        var args= args.currentgn
+        binding.gndetailsimg.loadImage(args.image)
+        binding.gndetailsdescription.text=args.description
+        binding.gndetailssource.text=args.source
     }
 
 

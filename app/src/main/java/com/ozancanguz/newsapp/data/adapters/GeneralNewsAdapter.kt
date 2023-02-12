@@ -3,10 +3,12 @@ package com.ozancanguz.newsapp.data.adapters
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.ozancanguz.newsapp.R
 import com.ozancanguz.newsapp.data.model.News
 import com.ozancanguz.newsapp.data.model.NewsResult
+import com.ozancanguz.newsapp.ui.fragments.news.NewsFragmentDirections
 import com.ozancanguz.newsapp.utils.Util.Companion.loadImage
 import kotlinx.android.synthetic.main.generalnews_rowlayout.view.*
 
@@ -36,7 +38,17 @@ class GeneralNewsAdapter:RecyclerView.Adapter<GeneralNewsAdapter.GeneralViewHold
 
         // glide image loading
         holder.itemView.generalNewsimageView.loadImage(currentNews.image)
+
+        // navigation safe args
+        holder.itemView.setOnClickListener {
+            val direction=NewsFragmentDirections.actionNewsFragmentToNewsDetailsFragment(currentNews)
+            holder.itemView.findNavController().navigate(direction)
+        }
+
+
+
     }
+
 
 
 

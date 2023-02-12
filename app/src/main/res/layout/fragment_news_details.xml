@@ -47,4 +47,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gndetailssource"
         app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/gotonewsbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="132dp"
+        android:text="Go to News"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gndetailsdescription" />
 </androidx.constraintlayout.widget.ConstraintLayout>
