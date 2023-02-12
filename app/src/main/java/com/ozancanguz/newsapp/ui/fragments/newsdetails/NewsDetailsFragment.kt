@@ -12,6 +12,7 @@ import com.ozancanguz.newsapp.R
 import com.ozancanguz.newsapp.databinding.FragmentNewsDetailsBinding
 import com.ozancanguz.newsapp.ui.fragments.news.NewsFragmentDirections
 import com.ozancanguz.newsapp.utils.Util.Companion.loadImage
+import kotlinx.android.synthetic.main.activity_main.*
 
 
 class NewsDetailsFragment : Fragment() {
@@ -20,9 +21,6 @@ class NewsDetailsFragment : Fragment() {
 
     private val binding get() = _binding!!
     private val args:NewsDetailsFragmentArgs by navArgs()
-
-
-
 
 
     override fun onCreateView(
@@ -47,6 +45,7 @@ class NewsDetailsFragment : Fragment() {
         binding.gotonewsbtn.setOnClickListener {
             val url=NewsDetailsFragmentDirections.actionNewsDetailsFragmentToNewsWebView(args.currentgn)
           findNavController().navigate(url)
+
         }
     }
 

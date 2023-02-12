@@ -1,5 +1,6 @@
 package com.ozancanguz.newsapp.ui.fragments.news
 
+import android.app.ActionBar
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -18,8 +19,11 @@ class NewsFragment : Fragment() {
        private var _binding: FragmentNewsBinding? = null
     private val binding get() = _binding!!
 
+
+
     private val newsViewModel:NewsViewModel by viewModels()
     private val generalNewsAdapter=GeneralNewsAdapter()
+
 
 
     override fun onCreateView(
@@ -35,6 +39,8 @@ class NewsFragment : Fragment() {
 
         // observe live data and update ui
         observeLiveData()
+
+
 
 
         return view    }

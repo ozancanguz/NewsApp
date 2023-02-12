@@ -11,6 +11,7 @@ import com.ozancanguz.newsapp.R
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.activity_main.*
 
+
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
@@ -24,12 +25,12 @@ class MainActivity : AppCompatActivity() {
         val appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.newsFragment,
-
-
             )
         )
 
         bottomNavigationView.setupWithNavController(navController)
+
+
 
     }
     override fun onSupportNavigateUp(): Boolean {
