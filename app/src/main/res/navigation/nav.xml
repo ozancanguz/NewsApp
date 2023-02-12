@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/newsFragment">
+
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.ozancanguz.newsapp.ui.fragments.news.NewsFragment"
+        android:label="NewsFragment" >
+        <action
+            android:id="@+id/action_newsFragment_to_newsDetailsFragment"
+            app:destination="@id/newsDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsDetailsFragment"
+        android:name="com.ozancanguz.newsapp.ui.fragments.newsdetails.NewsDetailsFragment"
+        android:label="fragment_news_details"
+        tools:layout="@layout/fragment_news_details" />
+    <fragment
+        android:id="@+id/localNewsFragment"
+        android:name="com.ozancanguz.newsapp.ui.fragments.localnews.LocalNewsFragment"
+        android:label="fragment_local_news"
+        tools:layout="@layout/fragment_local_news" >
+        <action
+            android:id="@+id/action_localNewsFragment_to_localNewsDetailsFragment"
+            app:destination="@id/localNewsDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/localNewsDetailsFragment"
+        android:name="com.ozancanguz.newsapp.ui.fragments.localnews.LocalNewsDetailsFragment"
+        android:label="fragment_local_news_details"
+        tools:layout="@layout/fragment_local_news_details" />
+</navigation>
