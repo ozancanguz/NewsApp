@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.ozancanguz.newsapp.R
 import com.ozancanguz.newsapp.data.model.News
 import com.ozancanguz.newsapp.data.model.NewsResult
+import com.ozancanguz.newsapp.utils.Util.Companion.loadImage
 import kotlinx.android.synthetic.main.generalnews_rowlayout.view.*
 
 class GeneralNewsAdapter:RecyclerView.Adapter<GeneralNewsAdapter.GeneralViewHolder>() {
@@ -34,6 +35,7 @@ class GeneralNewsAdapter:RecyclerView.Adapter<GeneralNewsAdapter.GeneralViewHold
         holder.itemView.nametv.text=currentNews.name
 
         // glide image loading
+        holder.itemView.generalNewsimageView.loadImage(currentNews.image)
     }
 
     override fun getItemCount(): Int {
