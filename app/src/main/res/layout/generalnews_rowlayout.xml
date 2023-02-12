@@ -1,6 +1,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:padding="5dp"
     android:orientation="horizontal">
 
     <ImageView
@@ -22,6 +24,7 @@
             android:gravity="center"
             android:textSize="20sp"
             android:padding="5dp"
+            android:textColor="#DA1212"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
@@ -30,6 +33,7 @@
             android:id="@+id/nametv"
             android:text="Tunceli’de Munzur Çayı’nda erkek cesedi bulundu"
             android:gravity="center"
+            android:textColor="#DA1212"
             android:padding="5dp"
             android:textSize="20sp"
             android:layout_width="match_parent"
@@ -41,6 +45,7 @@
             android:text="Cumhuriyet"
             android:gravity="center"
             android:textSize="20sp"
+            android:textColor="#DA1212"
             android:padding="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

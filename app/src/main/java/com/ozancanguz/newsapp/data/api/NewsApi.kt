@@ -1,5 +1,6 @@
 package com.ozancanguz.newsapp.data.api
 
+import com.ozancanguz.newsapp.data.model.News
 import com.ozancanguz.newsapp.data.model.NewsResult
 import retrofit2.Response
 import retrofit2.http.GET
@@ -15,8 +16,9 @@ interface NewsApi {
     )
     @GET("getNews")
     suspend fun getNews(@Query("country")country:String,
-                        @Query("tag")tag:String
-                        ):Response<NewsResult>
+                        @Query("tag")tag:String,
+                        @Query("paging")paging:Int
+                        ):Response<News>
 
 
 

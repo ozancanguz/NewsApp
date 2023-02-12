@@ -1,4 +1,4 @@
-package com.ozancanguz.newsapp.data
+package com.ozancanguz.newsapp.data.adapters
 
 import android.view.LayoutInflater
 import android.view.View
