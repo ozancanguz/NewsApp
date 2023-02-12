@@ -1,4 +1,4 @@
-# NewsApp
+# News App
 
 - I have developed a news mobile app.
 
@@ -18,3 +18,6 @@
 **Arhictecture:**
 
 - MVVM
+
+![image](https://user-images.githubusercontent.com/64928807/218336745-d142b8ad-401e-4e0c-9f33-159276712ad8.png)
+
