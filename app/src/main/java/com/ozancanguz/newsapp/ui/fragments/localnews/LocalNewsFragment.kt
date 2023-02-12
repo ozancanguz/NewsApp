@@ -6,9 +6,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.ozancanguz.newsapp.R
+import com.ozancanguz.newsapp.databinding.FragmentLocalNewsBinding
 
 
 class LocalNewsFragment : Fragment() {
+       private var _binding: FragmentLocalNewsBinding? = null
+
+    private val binding get() = _binding!!
+
+
+
 
 
     override fun onCreateView(
@@ -16,7 +23,10 @@ class LocalNewsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_local_news, container, false)
+          _binding = FragmentLocalNewsBinding.inflate(inflater, container, false)
+        val view = binding.root
+
+        return view
     }
 
 
