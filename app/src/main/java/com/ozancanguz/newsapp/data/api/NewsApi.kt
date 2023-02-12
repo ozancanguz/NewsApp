@@ -1,7 +1,6 @@
 package com.ozancanguz.newsapp.data.api
 
 import com.ozancanguz.newsapp.data.model.News
-import com.ozancanguz.newsapp.data.model.NewsResult
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Headers

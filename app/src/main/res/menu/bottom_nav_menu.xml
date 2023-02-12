@@ -3,12 +3,7 @@
 
     <item
         android:id="@+id/newsFragment"
-        android:title=" General News"
-        android:icon="@drawable/news2" />
-
-    <item
-        android:id="@+id/localNewsFragment"
-        android:title=" Local News"
+        android:title="News"
         android:icon="@drawable/news2" />
 
 

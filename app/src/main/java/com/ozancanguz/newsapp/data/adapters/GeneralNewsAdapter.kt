@@ -50,9 +50,6 @@ class GeneralNewsAdapter:RecyclerView.Adapter<GeneralNewsAdapter.GeneralViewHold
     }
 
 
-
-
-
     override fun getItemCount(): Int {
         return generalNews.size
     }

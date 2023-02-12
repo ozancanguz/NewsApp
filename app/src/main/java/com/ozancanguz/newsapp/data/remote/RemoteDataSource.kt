@@ -2,7 +2,6 @@ package com.ozancanguz.newsapp.data.remote
 
 import com.ozancanguz.newsapp.data.api.NewsApi
 import com.ozancanguz.newsapp.data.model.News
-import com.ozancanguz.newsapp.data.model.NewsResult
 import retrofit2.Response
 import javax.inject.Inject
 

@@ -12,6 +12,9 @@
         <action
             android:id="@+id/action_newsFragment_to_newsDetailsFragment"
             app:destination="@id/newsDetailsFragment" />
+        <action
+            android:id="@+id/action_newsFragment_to_newsWebView2"
+            app:destination="@id/newsWebView" />
     </fragment>
     <fragment
         android:id="@+id/newsDetailsFragment"
@@ -25,20 +28,6 @@
             android:id="@+id/action_newsDetailsFragment_to_newsWebView"
             app:destination="@id/newsWebView" />
     </fragment>
-    <fragment
-        android:id="@+id/localNewsFragment"
-        android:name="com.ozancanguz.newsapp.ui.fragments.localnews.LocalNewsFragment"
-        android:label="fragment_local_news"
-        tools:layout="@layout/fragment_local_news" >
-        <action
-            android:id="@+id/action_localNewsFragment_to_localNewsDetailsFragment"
-            app:destination="@id/localNewsDetailsFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/localNewsDetailsFragment"
-        android:name="com.ozancanguz.newsapp.ui.fragments.localnews.LocalNewsDetailsFragment"
-        android:label="fragment_local_news_details"
-        tools:layout="@layout/fragment_local_news_details" />
     <fragment
         android:id="@+id/newsWebView"
         android:name="com.ozancanguz.newsapp.ui.fragments.newsdetails.NewsWebView"

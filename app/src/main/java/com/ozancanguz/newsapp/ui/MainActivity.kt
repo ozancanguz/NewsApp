@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         val appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.newsFragment,
-                R.id.localNewsFragment
+
 
             )
         )
