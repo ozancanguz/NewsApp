@@ -38,6 +38,9 @@ class GeneralNewsAdapter:RecyclerView.Adapter<GeneralNewsAdapter.GeneralViewHold
         holder.itemView.generalNewsimageView.loadImage(currentNews.image)
     }
 
+
+
+
     override fun getItemCount(): Int {
         return generalNews.size
     }
